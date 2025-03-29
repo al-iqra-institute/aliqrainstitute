@@ -26,8 +26,8 @@ const Achievement = () => {
             Our Achievement
           </h2>
           <p className="mt-4 text-lg text-gray-200">
-            Alhamdulillah, Al-Iqra's initiatives continue to grow to meet our
-            community's needs. As we strive to support those pursuing sacred
+            Alhamdulillah, Al-Iqra initiatives continue to grow to meet our
+            community needs. As we strive to support those pursuing sacred
             knowledge and community welfare, we invite you to join us in making
             a meaningful impact.
           </p>

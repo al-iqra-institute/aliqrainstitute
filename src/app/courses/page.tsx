@@ -1,7 +1,6 @@
 import Navbar from "@/app/components/navbar";
 import { CiSearch } from "react-icons/ci";
 import React from "react";
-import Link from "next/link";
 import Coursescard from "../components/coursescard";
 import { client } from "@/sanity/lib/client";
 

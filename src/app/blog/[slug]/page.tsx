@@ -1,12 +1,7 @@
 import Navbar from "@/app/components/navbar";
 import { FaYoutube, FaPinterest, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaPinterestP,
-} from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import React from "react";
 import Link from "next/link";
@@ -14,14 +9,6 @@ import BlogsSinglePageList from "@/app/components/BlogsSinglePageList";
 import { client } from "@/sanity/lib/client";
 
 const page = async ({ params }: { params: { slug: string } }) => {
-  const menuItems = [
-    { name: "Chicken Fry", count: 26, img: "/blogmenu1.png" },
-    { name: "Burger Food", count: 46, img: "/blogmenu2.png" },
-    { name: "Pizza", count: 16, img: "/blogmenu3.png" },
-    { name: "Fresh Fruits", count: 36, img: "/blogmenu4.png" },
-    { name: "Vegetables", count: 16, img: "/blogmenu5.png" },
-  ];
-
   const query = `*[_type == 'post' && slug.current == "${params.slug}"][0]{
     title,"slug":slug.current,coverImage,content,date,"author": author->name,tags
   }`;

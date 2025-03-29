@@ -111,7 +111,7 @@ const CourseClientPage = ({ course }: { course: Course }) => {
               <span>(4.0)</span>
             </div>
             <p className="text-gray-600 mt-2">
-              "This course was really helpful and informative!"
+              &quot;This course was really helpful and informative!&quot;
             </p>
           </div>
         )}

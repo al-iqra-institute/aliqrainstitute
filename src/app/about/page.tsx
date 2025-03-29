@@ -15,8 +15,9 @@ const Page = () => {
               About Al Iqra
             </h2>
             <p className="mt-3 text-xl text-gray-700 font-semibold">
-              It's Your Journey to the Quran and Islamic Studies
+              It&apos;s Your Journey to the Quran and Islamic Studies
             </p>
+
             <p className="mt-3  text-gray-600 leading-relaxed">
               You can browse profiles of hand-picked online Quran teachers who
               teach Quran courses like Noorani Qaida, Quran Recitation, Tajweed,
@@ -82,8 +83,9 @@ const Page = () => {
           {/* Left Side - Text Section */}
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-bold text-primary">
-              Follow us for Daily Islamic Quotes & Updates
+              Follow us for Daily Islamic Quotes &amp; Updates
             </h2>
+
             <p className="text-gray-700 mt-2">
               Subscribe to our News Letter for a daily dose of spiritual
               enrichment.

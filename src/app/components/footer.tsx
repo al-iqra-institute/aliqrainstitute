@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { SiFacebook, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 import { FaYoutube, FaTelegramPlane } from "react-icons/fa";
 import Image from "next/image";
 

@@ -6,7 +6,7 @@ export async function POST(req) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const response = await resend.emails.send({
+    await resend.emails.send({
       from: `Al-Iqra Counseling <${process.env.RESEND_FROM_EMAIL}>`,
       to: ["aliqrainstitute01@gmail.com"],
       subject: "New Counseling Request",

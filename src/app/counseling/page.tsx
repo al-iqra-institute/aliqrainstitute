@@ -1,4 +1,3 @@
-import Link from "next/link";
 import CounselingForm from "@/app/components/counselingform";
 import Navbar from "@/app/components/navbar";
 

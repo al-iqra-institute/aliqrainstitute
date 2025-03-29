@@ -1,9 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
@@ -15,8 +13,6 @@ const images = [
 ];
 
 const VideoLibrarySection = () => {
-  const router = useRouter();
-
   const settings = {
     dots: false,
     infinite: true,
