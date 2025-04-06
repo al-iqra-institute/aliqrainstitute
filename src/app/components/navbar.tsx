@@ -1,14 +1,18 @@
 "use client";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const menuItems = ["", "courses", "counseling", "blog", "about"];
 
   return (
-    <nav className="bg-greenCustom px-4 fixed w-full top-0 z-50">
+    <nav className="bg-slate-400/30 px-4 fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
@@ -17,20 +21,34 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* Large Screen Menu with Underline Animation */}
-        <div className="hidden text-xl md:flex space-x-10 text-white ">
-          {["courses", "counseling", "programs", "blog", "about"].map(
-            (item) => (
+        {/* Large Screen Menu */}
+        <div className="hidden text-xl md:flex space-x-10">
+          {menuItems.map((item) => {
+            const href = item === "" ? "/" : `/${item}`;
+            const isActive = pathname === href;
+
+            return (
               <Link
                 key={item}
-                href={`/${item}`}
-                className="relative group hover:text-yellowCustom"
+                href={href}
+                className={`relative group ${
+                  isActive
+                    ? "text-yellowCustom font-semibold"
+                    : "text-white hover:text-yellowCustom"
+                }`}
               >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-                <span className="absolute left-0 -bottom-[6px] w-0 h-[2px] bg-yellowCustom transition-all duration-300 group-hover:w-full"></span>
+                {item === ""
+                  ? "Home"
+                  : item.charAt(0).toUpperCase() + item.slice(1)}
+
+                <span
+                  className={`absolute left-0 -bottom-[6px] h-[2px] bg-yellowCustom transition-all duration-300 ${
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                ></span>
               </Link>
-            )
-          )}
+            );
+          })}
         </div>
 
         {/* Mobile Menu Button */}
@@ -41,7 +59,7 @@ const Navbar = () => {
           <Menu size={35} />
         </button>
 
-        {/* Overlay (Click to Close) */}
+        {/* Overlay */}
         {isOpen && (
           <div
             className="fixed inset-0 bg-black/50 z-40"
@@ -49,7 +67,7 @@ const Navbar = () => {
           ></div>
         )}
 
-        {/* Mobile Menu (Right Side) */}
+        {/* Mobile Menu */}
         <div
           className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform ease-in-out duration-300 z-50 ${
             isOpen ? "translate-x-0" : "translate-x-full"
@@ -62,17 +80,27 @@ const Navbar = () => {
             <X size={28} />
           </button>
           <div className="mt-16 flex flex-col space-y-6 p-6 text-gray-900">
-            {["courses", "counseling", "programs", "blog", "about"].map(
-              (item) => (
+            {menuItems.map((item) => {
+              const href = item === "" ? "/" : `/${item}`;
+              const isActive = pathname === href;
+
+              return (
                 <Link
                   key={item}
-                  href={`/${item}`}
+                  href={href}
                   onClick={() => setIsOpen(false)}
+                  className={`${
+                    isActive
+                      ? "text-yellowCustom font-semibold"
+                      : "text-gray-900 hover:text-yellowCustom"
+                  }`}
                 >
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                  {item === ""
+                    ? "Home"
+                    : item.charAt(0).toUpperCase() + item.slice(1)}
                 </Link>
-              )
-            )}
+              );
+            })}
           </div>
         </div>
       </div>
