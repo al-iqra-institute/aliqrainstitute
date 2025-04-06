@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const HeroSection = () => {
   return (
     <section className="relative w-full h-[760px] md:h-[600px] lg:h-[703px] flex items-center overflow-hidden">
