@@ -36,7 +36,7 @@ const CounselingSection = () => {
       {/* Image */}
       <div className="md:w-1/2">
         <Image
-          src={"/support for growth.png"}
+          src={"/support for growth.jpg"}
           alt="Counseling Session"
           className="rounded-lg shadow-lg"
           width={600}
