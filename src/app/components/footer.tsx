@@ -103,11 +103,16 @@ const Footer = () => {
             </p>
             <p className="flex items-center space-x-3">
               <Mail className="w-6 h-6 text-red-500" />{" "}
-              <span>aliqrainstitute01@gmail.com</span>
+              <span className="text-base w-[100%]">
+                aliqrainstitute01@gmail.com
+              </span>
             </p>
             <p className="flex items-center space-x-3">
               <MapPin className="w-6 h-6 text-yellow-500" />
-              <span>N/A</span>
+              <span className="text-sm w-[100%]">
+                Frere Market, Akbar Road, Rambagh Quarter Rambagh Quarters,
+                Karachi, Pakistan
+              </span>
             </p>
           </div>
           <div className="mt-6 flex items-center bg-gray-100 rounded-full overflow-hidden shadow-md">
