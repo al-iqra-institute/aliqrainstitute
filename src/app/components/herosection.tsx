@@ -28,8 +28,8 @@ const HeroSection = () => {
           purpose, and live fulfilling, meaningful lives.
         </p>
 
-        <button className="mt-6 px-6 py-4 bg-yellowCustom hover:bg-yellowh text-white rounded-lg text-lg flex items-center gap-2">
-          <Link href={"/contact"}>Explore →</Link>
+        <button className="mt-6 px-6 py-4 bg-black hover:bg-gray-900 text-white rounded-lg text-lg flex items-center gap-2">
+          <Link href={"/courses"}>Explore →</Link>
         </button>
       </div>
     </section>

@@ -27,7 +27,7 @@ const Page = async () => {
   return (
     <div>
       <Navbar />
-      <div className="max-w-[1920px] lg:h-[1230px] mt-24 flex py-20 justify-center">
+      <div className="max-w-[1820px] px-5 bg-black lg:h-[1230px] flex py-48 justify-center">
         <div className=" w-full max-w-[1500px] gap-3 flex justify-center">
           <Coursescard course={courses} />
           <div className=" max-w-[300px] hidden md:block w-full">
@@ -40,7 +40,7 @@ const Page = async () => {
                 placeholder="Search Your Keyword.."
                 className="p-[10px] flex-[80%] border-[1px] "
               />{" "}
-              <button className="bg-yellowCustom flex-[20%] p-[14px] flex justify-center items-center px-4 pb-4 hover:bg-yellowh text-white">
+              <button className="bg-greenCustom flex-[20%] p-[14px] flex justify-center items-center px-4 pb-4 hover:bg-yellowh text-white">
                 {" "}
                 <CiSearch className="font-bold text-base" />{" "}
               </button>
@@ -48,11 +48,11 @@ const Page = async () => {
 
             {/* Saddam profile */}
             <div className="max-h-[335px] w-full max-w-sm mx-auto border border-gray-200 rounded-lg shadow-lg p-6">
-              <h2 className="font-bold text-xl">Category</h2>
+              <h2 className="font-bold text-white text-xl">Category</h2>
               {category.map((item, index) => (
                 <div key={index} className="font-normal text-lg">
                   <input type="checkbox" name="" id="" />{" "}
-                  <span>{item.name}</span>
+                  <span className="text-white">{item.name}</span>
                 </div>
               ))}
             </div>
@@ -61,7 +61,9 @@ const Page = async () => {
 
             {/* Product Tags */}
             <div className="max-h-[228px] h-full w-full max-w-sm mx-auto mt-4 border border-gray-200 rounded-lg shadow-lg p-6">
-              <h3 className="text-lg font-bold mb-4">Product Tags</h3>
+              <h3 className="text-lg text-white font-bold mb-4">
+                Product Tags
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   "Services",
@@ -75,7 +77,7 @@ const Page = async () => {
                 ].map((tag, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 text-gray-600 text-sm font-medium border-yellowh cursor-pointer hover:text-yellowh hover:border-b-[1px]"
+                    className="px-3 py-1 text-white text-sm font-medium border-yellowh cursor-pointer hover:text-yellowh hover:border-b-[1px]"
                   >
                     {tag}
                   </span>

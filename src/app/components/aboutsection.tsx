@@ -18,7 +18,7 @@ const AboutSection = () => {
           deepen their faith and lead purposeful lives.
         </p>
         <Link href={"/about"}>
-          <button className="mt-6 px-5 py-2 rounded-xl md:py-4 bg-yellowCustom text-white md:rounded-2xl text-lg font-semibold flex items-center gap-2 hover:bg-yellowh">
+          <button className="mt-6 px-5 py-2 rounded-xl md:py-4 bg-greenCustom text-white md:rounded-2xl text-lg font-semibold flex items-center gap-2 hover:bg-yellowh">
             Discover More
           </button>
         </Link>
@@ -33,7 +33,7 @@ const AboutSection = () => {
             Programs and events with the complete in-person experience
           </p>
           <Link href={"/courses"}>
-            <button className="mt-4 text-yellowCustom md:text-xl font-semibold flex items-center gap-2 hover:text-yellowh">
+            <button className="mt-4 text-greenCustom md:text-xl font-semibold flex items-center gap-2 hover:text-yellowh">
               Join Now →
             </button>
           </Link>
@@ -46,7 +46,7 @@ const AboutSection = () => {
             programs
           </p>
           <Link href={"/courses"}>
-            <button className="mt-4 text-yellowCustom md:text-xl font-semibold flex items-center gap-2 hover:text-yellowh">
+            <button className="mt-4 text-greenCustom md:text-xl font-semibold flex items-center gap-2 hover:text-yellowh">
               Join Now →
             </button>
           </Link>

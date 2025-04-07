@@ -63,7 +63,7 @@ export default function CounselingForm() {
         />
         <button
           type="submit"
-          className="w-full bg-yellowCustom text-white p-3 rounded hover:bg-yellowh transition shadow-md"
+          className="w-full bg-greenCustom text-white p-3 rounded hover:bg-yellowh transition shadow-md"
           disabled={loading}
         >
           {loading ? "Submitting..." : "Submit"}

@@ -13,7 +13,7 @@ const Ayathadees = async () => {
   const ayathadeesfinal = await client.fetch(query);
 
   return (
-    <div className="flex flex-col lg:flex-row w-full gap-6 px-4 lg:px-8 py-6">
+    <div className="flex bg-black text-white flex-col lg:flex-row w-full gap-6 px-4 lg:px-8 py-6">
       {/* Hadees Card */}
       <div className="bg-white text-black flex-1 p-8 flex flex-col justify-between rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 items-center text-center">
         <div>

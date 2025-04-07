@@ -39,12 +39,12 @@ const VideoLibrarySection = () => {
   };
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24 bg-white text-center">
-      <p className="text-yellowCustom font-semibold italic text-lg md:text-xl">
+    <section className="py-16 px-6 text-white md:px-12 lg:px-24 bg-black text-center">
+      <p className="text-greenCustom font-semibold italic text-lg md:text-xl">
         Inspiring Video Library
       </p>
       <h2 className="text-3xl md:text-4xl font-bold mt-2">Explore</h2>
-      <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-xs md:text-base">
+      <p className=" mt-4 max-w-2xl mx-auto text-xs md:text-base">
         Dive into a collection of insightful videos that provide knowledge, and
         practical guidance for learners of all levels.
       </p>
@@ -76,7 +76,7 @@ const VideoLibrarySection = () => {
             "noopener,noreferrer"
           )
         }
-        className="mt-6 px-6 py-3 bg-yellowCustom text-white font-semibold rounded-md shadow-md transition hover:bg-yellowh"
+        className="mt-6 px-6 py-3 bg-greenCustom text-white font-semibold rounded-md shadow-md transition hover:bg-yellowh"
       >
         Watch Now
       </button>

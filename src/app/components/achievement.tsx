@@ -45,7 +45,7 @@ const Achievement = () => {
           </p>
           <button
             onClick={openModal}
-            className="mt-6 px-6 py-3 bg-yellowCustom text-white rounded-lg text-lg hover:bg-yellowh"
+            className="mt-6 px-6 py-3 bg-black text-white rounded-lg text-lg hover:bg-slate-950"
           >
             Support Al-Iqra
           </button>

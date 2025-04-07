@@ -77,11 +77,11 @@ const CoursesSlider = () => {
   };
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24 bg-white text-center">
+    <section className="py-16 px-6 md:px-12 lg:px-24 bg-black text-center text-white">
       <h2 className="text-3xl md:text-4xl font-bold">
         Explore Our Signature Courses
       </h2>
-      <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+      <p className="mt-4 max-w-2xl mx-auto text-sm md:text-base">
         Discover a diverse selection of courses designed to elevate your skills
         and knowledge, tailored for learners at every level.
       </p>
@@ -116,7 +116,7 @@ const CoursesSlider = () => {
       </Slider>
 
       <Link href={"/courses"}>
-        <button className="mt-6 px-6 py-3 bg-yellowCustom text-white font-semibold rounded-md shadow-md transition hover:bg-yellowh">
+        <button className="mt-6 px-6 py-3 bg-greenCustom text-white font-semibold rounded-md shadow-md transition hover:bg-yellowh">
           View All Courses
         </button>
       </Link>

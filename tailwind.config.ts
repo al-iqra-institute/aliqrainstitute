@@ -21,9 +21,9 @@ const config: Config = {
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			dark: '#1e293b',
-			greenCustom: "#058382",
+			greenCustom: "#FF6701",
 			yellowCustom: "#eab54d",
-			yellowh: "#e0a838",
+			yellowh: "#FF7B15",
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

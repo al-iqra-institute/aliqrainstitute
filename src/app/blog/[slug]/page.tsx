@@ -31,7 +31,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 placeholder="Search Your Keyword.."
                 className="p-[10px] flex-[80%] border-[1px] "
               />{" "}
-              <button className="bg-yellowCustom flex-[20%] p-[14px] flex justify-center items-center px-4 pb-4 hover:bg-yellowh text-white">
+              <button className="bg-greenCustom flex-[20%] p-[14px] flex justify-center items-center px-4 pb-4 hover:bg-yellowh text-white">
                 {" "}
                 <CiSearch className="font-bold text-base" />{" "}
               </button>

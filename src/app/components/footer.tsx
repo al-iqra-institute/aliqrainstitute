@@ -49,23 +49,18 @@ const Footer = () => {
         <div className="hidden lg:block ml-10">
           <h3 className="text-xl lg:text-xl font-semibold">Quick Links</h3>
           <ul className="mt-9 lg:text-lg space-y-5 text-base">
-            {[
-              "Home",
-              "Courses",
-              "Instructors",
-              "Counselling",
-              "Welfare",
-              "FAQs",
-            ].map((item) => (
-              <li key={item}>
-                <Link
-                  href={`/${item.toLowerCase()}`}
-                  className="hover:underline"
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
+            {["Home", "Courses", "Blog", "Counseling", "Contact", "About"].map(
+              (item) => (
+                <li key={item}>
+                  <Link
+                    href={`/${item.toLowerCase()}`}
+                    className="hover:underline"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
         </div>
 
@@ -82,10 +77,7 @@ const Footer = () => {
               "Video Creation",
             ].map((item) => (
               <li key={item}>
-                <Link
-                  href={`/${item.toLowerCase()}`}
-                  className="hover:underline"
-                >
+                <Link href={"courses"} className="hover:underline">
                   {item}
                 </Link>
               </li>
@@ -120,7 +112,7 @@ const Footer = () => {
               placeholder="Enter your email"
               className="w-full p-3 text-black outline-none bg-transparent text-base"
             />
-            <button className="bg-yellowCustom px-6 py-3 rounded-full hover:bg-yellowh transition">
+            <button className="bg-greenCustom px-6 py-3 rounded-full hover:bg-yellowh transition">
               <Mail className="text-white w-6 h-6" />
             </button>
           </div>

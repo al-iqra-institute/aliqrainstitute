@@ -10,7 +10,7 @@ import Ayathadees from "./components/ayathadees";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Navbar />
       <HeroSection />
       <AboutSection />

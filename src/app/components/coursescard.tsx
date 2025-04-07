@@ -71,7 +71,7 @@ const Coursescard = ({ course }: { course: Course[] }) => {
                   </p>
 
                   {/* Price Section */}
-                  <p className="text-yellowCustom text-lg font-bold mt-2">
+                  <p className="text-greenCustom text-lg font-bold mt-2">
                     ${item.price}
                   </p>
                 </div>
@@ -82,7 +82,7 @@ const Coursescard = ({ course }: { course: Course[] }) => {
 
         <div className="flex justify-center mt-6 space-x-2">
           <button
-            className="border px-4 py-2 rounded-lg hover:cursor-pointer hover:bg-yellowh hover:text-white transition"
+            className="border px-4 py-2 text-white bg-greenCustom rounded-lg hover:cursor-pointer hover:bg-yellowh hover:text-black transition"
             disabled={currentPage === 1}
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           >
@@ -93,7 +93,7 @@ const Coursescard = ({ course }: { course: Course[] }) => {
               key={i + 1}
               className={`border px-4 py-2 rounded-lg transition ${
                 currentPage === i + 1
-                  ? "bg-yellowCustom text-white"
+                  ? "bg-greenCustom text-white"
                   : "hover:bg-gray-200"
               }`}
               onClick={() => setCurrentPage(i + 1)}
@@ -102,7 +102,7 @@ const Coursescard = ({ course }: { course: Course[] }) => {
             </button>
           ))}
           <button
-            className="border px-4 py-2 rounded-lg hover:cursor-pointer hover:bg-yellowh hover:text-white transition"
+            className="border px-4 py-2 rounded-lg text-white bg-greenCustom hover:cursor-pointer hover:bg-yellowh hover:text-black transition"
             disabled={currentPage === totalPages}
             onClick={() =>
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
