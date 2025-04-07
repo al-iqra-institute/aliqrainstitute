@@ -6,10 +6,11 @@ import Image from "next/image";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const images = [
-  "/explore1.png",
-  "/explore2.png",
-  "/explore3.png",
-  "/explore4.png",
+  "/first.jpg",
+  "/second.jpg",
+  "/third.jpg",
+  "/four.jpg",
+  "/five.jpg",
 ];
 
 const VideoLibrarySection = () => {

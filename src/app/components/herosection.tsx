@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const HeroSection = () => {
   return (
     <section className="relative w-full h-[760px] md:h-[600px] lg:h-[703px] flex items-center overflow-hidden">
@@ -25,8 +27,9 @@ const HeroSection = () => {
           Transformative Islamic education to strengthen faith, cultivate
           purpose, and live fulfilling, meaningful lives.
         </p>
+
         <button className="mt-6 px-6 py-4 bg-yellowCustom hover:bg-yellowh text-white rounded-lg text-lg flex items-center gap-2">
-          Explore →
+          <Link href={"/contact"}>Explore →</Link>
         </button>
       </div>
     </section>

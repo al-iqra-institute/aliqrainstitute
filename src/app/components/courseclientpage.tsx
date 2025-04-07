@@ -13,6 +13,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { urlFor } from "@/sanity/lib/image";
+import Link from "next/link";
 
 const CourseClientPage = ({ course }: { course: Course }) => {
   const [activeTab, setActiveTab] = useState("overview");
@@ -49,7 +50,9 @@ const CourseClientPage = ({ course }: { course: Course }) => {
             <div className="text-2xl font-semibold text-greenCustom">
               ${course.price}
             </div>
-            <Button className="w-40">Enroll Now</Button>
+            <Link href={"/contact"}>
+              <Button className="w-40">Enroll Now</Button>
+            </Link>
           </div>
         </div>
 
