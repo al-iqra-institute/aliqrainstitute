@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Navbar from "../components/navbar";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -24,9 +25,11 @@ const Page = () => {
               Quran memorization, and Arabic language. We also offer Islamic
               subjects like Hadith, Fiqh, Tafsir, Sirah, Aqidah, and Tareekh.
             </p>
-            <button className="mt-6 bg-yellowCustom text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellowh transition">
-              Start Learning Now
-            </button>
+            <Link href={"/contact"}>
+              <button className="mt-6 bg-yellowCustom text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellowh transition">
+                Start Learning Now
+              </button>
+            </Link>
           </div>
 
           {/* Right Image */}

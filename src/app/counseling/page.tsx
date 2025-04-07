@@ -1,5 +1,6 @@
 import CounselingForm from "@/app/components/counselingform";
 import Navbar from "@/app/components/navbar";
+import Link from "next/link";
 
 const CounselingPage = () => {
   return (
@@ -7,7 +8,6 @@ const CounselingPage = () => {
       <Navbar />
       {/* Hero Section */}
       <section className="mt-28 bg-greenCustom  text-white py-16 px-4 text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10"></div>
         <h1 className="text-4xl md:text-5xl font-serif font-bold">
           Islamic Counseling Services
         </h1>
@@ -15,9 +15,12 @@ const CounselingPage = () => {
           Seek guidance and inner peace through Islamic teachings and
           professional counseling.
         </p>
-        <button className="mt-6 bg-yellowCustom px-6 py-2 md:px-8 md:py-3 rounded-lg text-white font-semibold hover:bg-yellowh transition shadow-md cursor-pointer ">
-          Book a Session
-        </button>
+
+        <Link href={"#convay"}>
+          <button className="mt-6 bg-yellowCustom hover:cursor-pointer px-6 py-2 md:px-8 md:py-3 rounded-lg text-white font-semibold hover:bg-yellowh transition shadow-md cursor-pointer ">
+            Book a Session
+          </button>
+        </Link>
       </section>
 
       {/* New Stylish Services Section */}

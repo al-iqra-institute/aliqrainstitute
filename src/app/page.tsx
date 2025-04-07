@@ -6,6 +6,7 @@ import CounselingSection from "./components/counselingsection";
 import VideoLibrarySection from "./components/explore";
 import CoursesSection from "./components/signaturecourses";
 import Navbar from "./components/navbar";
+import Ayathadees from "./components/ayathadees";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <Achievement />
+      <Ayathadees />
       <ServicesSection />
       <CounselingSection />
       <VideoLibrarySection />

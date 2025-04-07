@@ -20,4 +20,13 @@ type Blog = {
     tags: string[];
 };
 
+type ayathadees = {
+    hadeesArabic: string;
+    hadeesTranslation: string;
+    hadeesSource: string;
+    ayatArabic: string;
+    ayatTranslation: string;
+    ayatSource: string;
+};
+
 // TypedObject[]

@@ -110,8 +110,7 @@ const Footer = () => {
             <p className="flex items-center space-x-3">
               <MapPin className="w-6 h-6 text-yellow-500" />
               <span className="text-sm w-[100%]">
-                Frere Market, Akbar Road, Rambagh Quarter Rambagh Quarters,
-                Karachi, Pakistan
+                Frere Market, Akbar Road, Rambagh Quarters, Karachi, Pakistan
               </span>
             </p>
           </div>
