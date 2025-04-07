@@ -55,9 +55,9 @@ export default function Newone() {
             <li>
               ✅ You are interested in learning to Speak Arabic with confidence.
             </li>
-            <li>✅ You want to understand when you pray and recite Qur’an.</li>
+            <li>✅ You want to understand when you pray and recite Quran.</li>
             <li>
-              ✅ You will practice Arabic everyday and won’t forget what you
+              ✅ You will practice Arabic everyday and wont forget what you
               learn.
             </li>
           </ul>

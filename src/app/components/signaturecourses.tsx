@@ -4,6 +4,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 const courses = [
   {
@@ -114,9 +115,11 @@ const CoursesSlider = () => {
         ))}
       </Slider>
 
-      <button className="mt-6 px-6 py-3 bg-yellowCustom text-white font-semibold rounded-md shadow-md transition hover:bg-yellowh">
-        View All Courses
-      </button>
+      <Link href={"/courses"}>
+        <button className="mt-6 px-6 py-3 bg-yellowCustom text-white font-semibold rounded-md shadow-md transition hover:bg-yellowh">
+          View All Courses
+        </button>
+      </Link>
     </section>
   );
 };
