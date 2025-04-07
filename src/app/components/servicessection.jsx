@@ -59,7 +59,7 @@ const Services = [
 const ServicesSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleClick = (service: any) => {
+  const handleClick = (service) => {
     if (service.title === "Welfare Initiatives") {
       setIsModalOpen(true);
     }
