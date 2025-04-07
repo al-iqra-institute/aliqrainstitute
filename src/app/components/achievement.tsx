@@ -1,10 +1,22 @@
 "use client";
 
 import CountUp from "react-countup";
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import ImageModal from "@/app/components/ImageModal";
 
 const Achievement = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <section
@@ -31,9 +43,13 @@ const Achievement = () => {
             knowledge and community welfare, we invite you to join us in making
             a meaningful impact.
           </p>
-          <button className="mt-6 px-6 py-3 bg-yellowCustom text-white rounded-lg text-lg hover:bg-yellowh">
+          <button
+            onClick={openModal}
+            className="mt-6 px-6 py-3 bg-yellowCustom text-white rounded-lg text-lg hover:bg-yellowh"
+          >
             Support Al-Iqra
           </button>
+          <ImageModal isOpen={isModalOpen} onClose={closeModal} />
         </div>
         <div
           ref={ref}
