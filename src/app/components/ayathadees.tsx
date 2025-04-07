@@ -8,20 +8,19 @@ const Ayathadees = async () => {
     ayatArabic,
     ayatTranslation,
     ayatSource
-  }
-`;
+  }`;
 
   const ayathadeesfinal = await client.fetch(query);
 
   return (
-    <div className="flex flex-col lg:flex-row w-full">
-      {/* Hadees Section */}
-      <div className="bg-white text-black flex-1 p-8 flex flex-col justify-between h-full">
+    <div className="flex flex-col lg:flex-row w-full gap-6 px-4 lg:px-8 py-6">
+      {/* Hadees Card */}
+      <div className="bg-white text-black flex-1 p-8 flex flex-col justify-between rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 items-center text-center">
         <div>
           <div className="inline-block bg-greenCustom text-white px-4 py-1 rounded-full text-sm font-semibold mb-6">
             Hadees of the Day
           </div>
-          <p className="text-2xl md:text-3xl py-7 lg:text-5xl font-bold leading-relaxed text-right mb-8">
+          <p className="text-3xl py-7 lg:text-5xl font-bold leading-relaxed mb-8">
             {ayathadeesfinal.hadeesArabic}
           </p>
           <p className="mb-6 text-base py-7 md:text-lg lg:text-2xl font-semibold leading-snug">
@@ -36,13 +35,13 @@ const Ayathadees = async () => {
         </button>
       </div>
 
-      {/* Ayat Section */}
-      <div className="bg-greenCustom text-white flex-1 p-8 flex flex-col justify-between h-full">
+      {/* Ayat Card */}
+      <div className="bg-greenCustom text-white flex-1 p-8 flex flex-col justify-between rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 items-center text-center">
         <div>
           <div className="inline-block bg-white text-black px-4 py-1 rounded-full text-sm font-semibold mb-6">
             Ayat of the Day
           </div>
-          <p className="text-2xl md:text-3xl py-7 lg:text-5xl font-bold leading-relaxed text-right mb-8">
+          <p className="text-3xl py-7 lg:text-5xl font-bold leading-relaxed mb-8">
             {ayathadeesfinal.ayatArabic}
           </p>
           <p className="font-semibold py-7 text-base md:text-lg lg:text-2xl mb-6 leading-snug">
