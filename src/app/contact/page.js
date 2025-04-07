@@ -55,10 +55,12 @@ export default function Newone() {
             <li>
               ✅ You are interested in learning to Speak Arabic with confidence.
             </li>
-            <li>✅ You want to understand when you pray and recite Quran.</li>
             <li>
-              ✅ You will practice Arabic everyday and wont forget what you
-              learn.
+              ✅ You want to understand when you pray and recite Qur&apos;an.
+            </li>
+            <li>
+              ✅ You will practice Arabic everyday and won&apos;t forget what
+              you learn
             </li>
           </ul>
 
@@ -111,7 +113,7 @@ export default function Newone() {
               <option value="arabic-beginner">Arabic for Beginners</option>
               <option value="advanced-arabic">Advanced Arabic</option>
               <option value="quran-understanding">
-                Understanding the Qur'an
+                Understanding the Qur&apos;an
               </option>
               {/* Add more options as needed */}
             </select>
