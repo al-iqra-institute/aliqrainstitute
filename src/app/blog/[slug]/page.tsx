@@ -49,20 +49,16 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 />
               </div>
 
-              <h3 className="text-lg font-bold">Saddam Khan</h3>
+              <h3 className="text-lg font-bold">Farhan Khan</h3>
               <p className="text-gray-500 text-sm mb-2">Blogger/Photographer</p>
 
               {/* Ratings */}
-              <div className="flex items-center justify-center text-yellow-500 mb-2">
-                <span className="text-sm flex">{"★ ★ ★ ★ ★"}</span>
-                <span className="text-gray-500 text-sm ml-2">(50 Review)</span>
-              </div>
 
               {/* Description */}
               <p className="text-gray-600 text-sm mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis distinctio, odio eligendi suscipit reprehenderit
-                atque.
+                I'm a passionate Islamic blogger dedicated to sharing authentic
+                knowledge and spiritual insights. Through thoughtful articles
+                and Quranic reflections
               </p>
 
               {/* Social Links */}

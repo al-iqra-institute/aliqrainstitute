@@ -27,6 +27,8 @@ type ayathadees = {
     ayatArabic: string;
     ayatTranslation: string;
     ayatSource: string;
+    dailyQuote: string;
+    quoteAuthor: string;
 };
 
 // TypedObject[]

@@ -1,3 +1,4 @@
+"use client";
 import HeroSection from "./components/herosection";
 import AboutSection from "./components/aboutsection";
 import Achievement from "./components/achievement";
@@ -6,20 +7,39 @@ import CounselingSection from "./components/counselingsection";
 import VideoLibrarySection from "./components/explore";
 import CoursesSection from "./components/signaturecourses";
 import Navbar from "./components/navbar";
-import Ayathadees from "./components/ayathadees";
+import Dailycontent from "./components/dailycontent";
+import { client } from "@/sanity/lib/client";
 
-export default function Home() {
+// export default function Home() {
+const Home = async () => {
+  const query = `*[_type == "dailyContent"] | order(_updatedAt desc){
+    hadeesArabic,
+    hadeesTranslation,
+    hadeesSource,
+    ayatArabic,
+    ayatTranslation,
+    ayatSource,
+    dailyQuote,
+    quoteAuthor
+  }`;
+
+  const ayathadeesfinal = await client.fetch(query);
+  var latest = ayathadeesfinal[0];
+  console.log(ayathadeesfinal);
+
   return (
     <div className="">
       <Navbar />
       <HeroSection />
       <AboutSection />
       <Achievement />
-      <Ayathadees />
+      <Dailycontent latest={latest} />
       <ServicesSection />
       <CounselingSection />
       <VideoLibrarySection />
       <CoursesSection />
     </div>
   );
-}
+};
+
+export default Home;

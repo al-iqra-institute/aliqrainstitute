@@ -8,14 +8,10 @@ export const revalidate = 120;
 
 const Page = async () => {
   const category = [
-    { name: "Sandwiches" },
-    { name: "Burger" },
-    { name: "Chicken Chup" },
-    { name: "Drink" },
-    { name: "Pizza" },
-    { name: "Veg" },
-    { name: "Non Veg" },
-    { name: "Uncategorized" },
+    { name: "Islamic Knowledge" },
+    { name: "Skill Development" },
+    { name: "Online Business" },
+    { name: "Video Creation" },
   ];
 
   const query = `*[_type == 'course'] | order(_updatedAt desc){
@@ -66,14 +62,10 @@ const Page = async () => {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Services",
-                  "Our Menu",
-                  "Pizza",
-                  "Cupcake",
-                  "Burger",
-                  "Cookies",
-                  "Our Shop",
-                  "Tandoori Chicken",
+                  "QuranStudies",
+                  "SeerahOfProphet",
+                  "KidsIslamicEducation",
+                  "HadithLearning",
                 ].map((tag, index) => (
                   <span
                     key={index}

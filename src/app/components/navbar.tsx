@@ -9,7 +9,14 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  const menuItems = ["", "courses", "counseling", "blog", "about"];
+  const menuItems = [
+    "",
+    "courses",
+    "counseling",
+    "dailycontent",
+    "blog",
+    "about",
+  ];
 
   return (
     <nav className="bg-slate-400/30 px-4 fixed w-full top-0 z-50">
