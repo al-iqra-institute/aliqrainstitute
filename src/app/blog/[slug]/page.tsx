@@ -56,7 +56,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
 
               {/* Description */}
               <p className="text-gray-600 text-sm mb-4">
-                I'm a passionate Islamic blogger dedicated to sharing authentic
+                I am a passionate Islamic blogger dedicated to sharing authentic
                 knowledge and spiritual insights. Through thoughtful articles
                 and Quranic reflections
               </p>
