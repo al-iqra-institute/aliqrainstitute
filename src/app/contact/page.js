@@ -110,11 +110,12 @@ export default function Newone() {
               required
             >
               <option value="">Select a Course</option>
-              <option value="arabic-beginner">Arabic for Beginners</option>
-              <option value="advanced-arabic">Advanced Arabic</option>
-              <option value="quran-understanding">
-                Understanding the Qur&apos;an
+              <option value="Uloom ul Quran">Uloom ul Quran</option>
+              <option value="DRS E NIZAMI">DRS E NIZAMI</option>
+              <option value="Diploma Arabic Languageg">
+                Diploma Arabic Language
               </option>
+              <option value="Quran Memorization">Quran Memorization</option>
               {/* Add more options as needed */}
             </select>
 
