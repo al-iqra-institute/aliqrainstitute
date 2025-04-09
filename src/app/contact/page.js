@@ -53,13 +53,15 @@ export default function Newone() {
           </h2>
           <ul className="text-left sm:text-xs md:text-base list-none space-y-3 mb-8">
             <li>
-              ✅ You are interested in learning to Speak Arabic with confidence.
+              ✅ Empowering society through knowledge, critical thinking, and
+              Sharia-based guidance
             </li>
             <li>
-              ✅ You want to understand when you pray and recite Qur&apos;an.
+              ✅ Uplifting women through Taleem-e-Niswan and reviving Political
+              Islam
             </li>
             <li>
-              ✅ You will practice Arabic everyday and won&apos;t forget what
+              ✅ To build a conscious Ummah rooted in the Qur&apos;an and Sunnah
               you learn
             </li>
           </ul>
