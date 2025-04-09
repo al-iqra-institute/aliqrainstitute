@@ -41,7 +41,7 @@ const Navbar = () => {
                 className={`relative group ${
                   isActive
                     ? "text-yellowCustom font-semibold"
-                    : "text-white hover:text-yellowCustom"
+                    : "text-black hover:text-yellowCustom"
                 }`}
               >
                 {item === ""

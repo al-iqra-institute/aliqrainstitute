@@ -22,10 +22,10 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 pr-6 pl-6 md:px-16 pt-10 lg:px-24 max-w-4xl">
-        <h1 className="text-white text-2xl md:text-5xl md:font-semibold font-bold leading-tight">
+        <h1 className=" text-2xl md:text-5xl md:font-semibold font-bold leading-tight">
           Empowering Faith, Embracing Knowledge
         </h1>
-        <p className="text-white hidden sm:block mt-4 text-lg md:text-xl">
+        <p className="hidden sm:block mt-4 text-lg md:text-xl">
           Transformative Islamic education to strengthen faith, cultivate
           purpose, and live fulfilling, meaningful lives.
         </p>
