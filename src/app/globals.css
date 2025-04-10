@@ -12,13 +12,27 @@
   } */
 }
 
+@media (min-width: 450px) and (max-width: 500px) {
+  .custom-sm-range {
+    @apply left-20; /* koi bhi Tailwind classes yahan apply kar sakte ho */
+  }
+}
+@media (min-width: 501px) and (max-width: 560px) {
+  .custom-sm-range {
+    @apply left-28; /* koi bhi Tailwind classes yahan apply kar sakte ho */
+  }
+}
+@media (min-width: 561px) and (max-width: 640px) {
+  .custom-sm-range {
+    @apply left-36; /* koi bhi Tailwind classes yahan apply kar sakte ho */
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-
-
 
 @layer base {
   :root {
@@ -75,8 +89,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

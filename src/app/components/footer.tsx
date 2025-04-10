@@ -13,7 +13,12 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* About Section */}
         <div>
-          <Image src="/logo.png" alt="Al Midrar Logo" width={160} height={60} />
+          <Image
+            src="/logoinwhite.jpg"
+            alt="Al Midrar Logo"
+            width={160}
+            height={60}
+          />
           <h3 className="text-xl font-semibold mt-2 lg:text-xl">About us</h3>
           <p className="text-base mt-3">
             At Al-Iqra Institute, we provide accessible Islamic knowledge
