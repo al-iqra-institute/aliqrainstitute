@@ -57,7 +57,9 @@ const BlogList = ({ blogs }: { blogs: Blog[] }) => {
       </Carousel>
 
       {/* Recent Blogs Section */}
-      <h2 className="text-2xl font-semibold">Recent Blog Posts</h2>
+      <h2 className="text-2xl text-white py-3 font-semibold">
+        Recent Blog Posts
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {blogs.slice(0, visibleBlogs).map((blog) => (
           <Card
@@ -78,7 +80,7 @@ const BlogList = ({ blogs }: { blogs: Blog[] }) => {
                 </div>
 
                 {/* Title with Hover Effect */}
-                <h3 className="text-lg cursor-pointer font-semibold mt-2 transition-all duration-300 ease-in-out group-hover:text-yellowh">
+                <h3 className="text-lg text-greenCustom cursor-pointer font-semibold mt-2 transition-all duration-300 ease-in-out group-hover:text-yellowh">
                   {blog.title}
                 </h3>
 
@@ -91,7 +93,7 @@ const BlogList = ({ blogs }: { blogs: Blog[] }) => {
                 </p>
 
                 {/* Blog Excerpt */}
-                <p className="text-gray-600 mt-1">{blog.excerpt}</p>
+                <p className="text-black mt-1">{blog.excerpt}</p>
               </CardContent>
             </Link>
           </Card>

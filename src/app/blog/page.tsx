@@ -13,7 +13,7 @@ const Page = async () => {
   const blogs: Blog[] = await client.fetch(query);
 
   return (
-    <div>
+    <div className="bg-black pt-2">
       <Navbar />
       <div className="container mx-auto mt-36 p-6 space-y-8">
         {/* Client Side Component */}

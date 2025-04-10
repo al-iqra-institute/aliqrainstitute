@@ -60,13 +60,11 @@ const CounselingPage = () => {
       </div>
 
       {/* Enhanced Testimonials Section */}
-      <div className="bg-gray-100 py-12 px-4 md:px-6">
-        <h2 className="text-3xl font-bold text-center text-greenCustom">
-          What Our Clients Say
-        </h2>
+      <div className="bg-greenCustom py-12 px-4 md:px-6">
+        <h2 className="text-3xl font-bold text-center">What Our Clients Say</h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <p className="text-gray-700 italic">
+          <div className="bg-black p-6 rounded-lg shadow-lg">
+            <p className="text-white italic">
               “This counseling has transformed my life. Alhamdulillah, I found
               the peace I was searching for.”
             </p>
@@ -74,8 +72,8 @@ const CounselingPage = () => {
               - A Grateful Client
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <p className="text-gray-700 italic">
+          <div className="bg-black p-6 rounded-lg shadow-lg">
+            <p className="text-white italic">
               “The Islamic perspective truly made a difference in my personal
               struggles. Highly recommended.”
             </p>

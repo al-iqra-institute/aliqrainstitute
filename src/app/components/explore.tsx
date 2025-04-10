@@ -71,7 +71,7 @@ const VideoLibrarySection = () => {
       <button
         onClick={() =>
           window.open(
-            "https://www.youtube.com/@AlIqra",
+            "https://youtube.com/@aliqrainstitute?si=_sdxZp2A8yMgk8fX",
             "_blank",
             "noopener,noreferrer"
           )

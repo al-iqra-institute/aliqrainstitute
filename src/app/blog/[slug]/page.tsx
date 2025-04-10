@@ -16,7 +16,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
   const blog: Blog = await client.fetch(query);
 
   return (
-    <div>
+    <div className="bg-black py-2 text-white">
       <Navbar />
       <div className="max-w-[1920px] h-auto mt-24 flex py-20 justify-center">
         <div className=" w-full max-w-[1400px] flex justify-center">
@@ -49,13 +49,15 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 />
               </div>
 
-              <h3 className="text-lg font-bold">Farhan Khan</h3>
-              <p className="text-gray-500 text-sm mb-2">Blogger/Photographer</p>
+              <h3 className="text-lg font-bold text-greenCustom">
+                Farhan Khan
+              </h3>
+              <p className=" text-sm mb-2">Blogger/Photographer</p>
 
               {/* Ratings */}
 
               {/* Description */}
-              <p className="text-gray-600 text-sm mb-4">
+              <p className=" text-sm mb-4">
                 I am a passionate Islamic blogger dedicated to sharing authentic
                 knowledge and spiritual insights. Through thoughtful articles
                 and Quranic reflections
@@ -65,28 +67,28 @@ const page = async ({ params }: { params: { slug: string } }) => {
               <div className="flex justify-center gap-4">
                 <Link
                   href="https://www.facebook.com/share/15koQxy1Bb/?mibextid=qi2Omg"
-                  className="text-gray-500 hover:text-blue-600"
+                  className=" hover:text-blue-600"
                   target="_blank"
                 >
                   <FaFacebookF />
                 </Link>
                 <Link
                   href="https://youtube.com/@aliqrainstitute?si=_sdxZp2A8yMgk8fX"
-                  className="text-gray-500 hover:text-red-500"
+                  className=" hover:text-red-500"
                   target="_blank"
                 >
                   <FaYoutube />
                 </Link>
                 <Link
                   href="https://www.instagram.com/aliqrainstitute5?utm_source=qr&igsh=MjhyYjh2cDRsemxw"
-                  className="text-gray-500 hover:text-pink-500"
+                  className=" hover:text-pink-500"
                   target="_blank"
                 >
                   <FaInstagram />
                 </Link>
                 <Link
                   href="https://t.me/AlIqrainstitute123"
-                  className="text-gray-500 hover:text-blue-500"
+                  className=" hover:text-blue-500"
                   target="_blank"
                 >
                   <FaTwitter />

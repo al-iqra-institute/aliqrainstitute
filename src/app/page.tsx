@@ -24,7 +24,6 @@ const Home = async () => {
 
   const ayathadeesfinal = await client.fetch(query);
   const latest = ayathadeesfinal[0];
-  console.log(ayathadeesfinal);
 
   return (
     <div className="">
