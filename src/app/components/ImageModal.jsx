@@ -24,6 +24,28 @@ export default function ImageModal({ isOpen, onClose }) {
 
   if (!isOpen) return null;
 
+  const message = ` Donate For The Welfare Of The Ummah
+Support The Campaign: *Save Qibla Awwal*
+
+Stand for the honor of *Masjid Al-Aqsa*, the First Qibla of the Ummah of my beloved Prophet Muhammad ﷺ.
+
+This is not just a cause — this is a *call from the heart* of the Ummah.
+
+Let your donation be a *means of healing*, a *Sadqa-e-Jariyah*, and a *sign of your undying love* for the suffering Ummah.
+
+ *Rise. Support. Give.*
+Because *the Ummah needs you — now more than ever.*
+
+ *Donation Details:*
+ 
+ *Bank Account:*
+    Pk62ABPA0010108954530013
+ *JazzCash / EasyPaisa:*
+     0327 2495380
+
+ Donate via: https://www.aliqrainstitute.com
+`;
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 px-4"
@@ -74,7 +96,7 @@ export default function ImageModal({ isOpen, onClose }) {
               Because The Ummah Needs You — Now More Than Ever.
             </p>
             <Link
-              href={`https://wa.me/?text=${encodeURIComponent("Become a part of a mission that enlightens hearts with the light of knowledge: https://www.aliqrainstitute.com")}`}
+              href={`https://wa.me/?text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -66,10 +66,9 @@ const Page = () => {
             </p>
 
             <p className="md:text-lg leading-relaxed border-l-4 border-l-white pl-4">
-              In addition, you will be able to learn all the subjects of Islam
-              from graduate scholars Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. of higher Islamic institutions. These are the
-              male and female teachers we have hand-picked for you.
+              Learn all essential subjects of Islam from qualified male and
+              female scholars graduates of renowned Islamic institutions,
+              carefully selected for their knowledge and character.
             </p>
           </div>
 
