@@ -74,7 +74,7 @@ const ServicesSection = () => {
       >
         Growth
       </h1>
-      <h2 className="relative text-4xl md:text-4xl font-bold font-sans z-10">
+      <h2 className="relative text-4xl text-greenCustom md:text-4xl font-bold font-sans z-10">
         Empowering Your Journey
       </h2>
 

@@ -40,11 +40,13 @@ const VideoLibrarySection = () => {
 
   return (
     <section className="py-16 px-6 text-white md:px-12 lg:px-24 bg-black text-center">
-      <p className="text-greenCustom font-semibold italic text-lg md:text-xl">
+      <p className="text-white font-semibold italic text-lg md:text-xl">
         Inspiring Video Library
       </p>
-      <h2 className="text-3xl md:text-4xl font-bold mt-2">Explore</h2>
-      <p className=" mt-4 max-w-2xl mx-auto text-xs md:text-base">
+      <h2 className="text-3xl text-greenCustom md:text-4xl font-bold mt-2">
+        Explore
+      </h2>
+      <p className=" text-greenCustom mt-4 max-w-2xl mx-auto text-xs md:text-base">
         Dive into a collection of insightful videos that provide knowledge, and
         practical guidance for learners of all levels.
       </p>

@@ -78,10 +78,10 @@ const CoursesSlider = () => {
 
   return (
     <section className="py-16 px-6 md:px-12 lg:px-24 bg-black text-center text-white">
-      <h2 className="text-3xl md:text-4xl font-bold">
+      <h2 className="text-3xl text-greenCustom md:text-4xl font-bold">
         Explore Our Signature Courses
       </h2>
-      <p className="mt-4 max-w-2xl mx-auto text-sm md:text-base">
+      <p className="mt-4 text-greenCustom max-w-2xl mx-auto text-sm md:text-base">
         Discover a diverse selection of courses designed to elevate your skills
         and knowledge, tailored for learners at every level.
       </p>
@@ -110,7 +110,9 @@ const CoursesSlider = () => {
               />
             </div>
             <p className="font-semibold mt-2">{course.instructor}</p>
-            <h3 className="text-lg font-bold">{course.title}</h3>
+            <h3 className="text-lg text-greenCustom font-bold">
+              {course.title}
+            </h3>
           </div>
         ))}
       </Slider>

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ImageModal({ isOpen, onClose }) {
   const handleOverlayClick = (e) => {
@@ -43,7 +44,7 @@ export default function ImageModal({ isOpen, onClose }) {
               src="/Bank_account.jpg"
               alt="Donation Campaign"
               fill
-              className="object-cover rounded"
+              className=" rounded"
             />
           </div>
 
@@ -56,18 +57,29 @@ export default function ImageModal({ isOpen, onClose }) {
               <strong>Support The Campaign:</strong> Save Qibla Awwal
             </p>
             <p className="text-sm sm:text-base">
-              Stand For The Honor Of <strong>Masjid Al-Aqsa</strong>, The First Qibla Of The Ummah Of My Beloved Prophet Muhammad (Peace Be Upon Him).
+              Stand For The Honor Of <strong>Masjid Al-Aqsa</strong>, The First
+              Qibla Of The Ummah Of My Beloved Prophet Muhammad (Peace Be Upon
+              Him).
             </p>
             <p className="text-sm sm:text-base">
-              This Is Not Just A Cause — This Is A Call From The Heart Of The Ummah Of My Beloved.
+              This Is Not Just A Cause — This Is A Call From The Heart Of The
+              Ummah Of My Beloved.
             </p>
             <p className="text-sm sm:text-base font-medium text-gray-700">
-              Let Your Donation Be A Means Of Healing, A Sadqa-E-Jariyah, And A Sign Of Your Undying Love For The Suffering Ummah.
+              Let Your Donation Be A Means Of Healing, A Sadqa-E-Jariyah, And A
+              Sign Of Your Undying Love For The Suffering Ummah.
             </p>
             <p className="text-sm sm:text-base font-semibold text-green-800">
               Rise. Support. Give. <br />
               Because The Ummah Needs You — Now More Than Ever.
             </p>
+            <Link
+              href={`https://wa.me/?text=${encodeURIComponent("Become a part of a mission that enlightens hearts with the light of knowledge: https://www.aliqrainstitute.com")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <button className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 flex items-center gap-2">Share on WhatsApp</button>
+            </Link>
           </div>
         </div>
       </div>

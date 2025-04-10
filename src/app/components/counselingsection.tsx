@@ -16,10 +16,10 @@ const CounselingSection = () => {
         >
           Counseling
         </h1>
-        <h2 className="relative text-center md:text-left text-3xl md:text-4xl font-bold z-10 font-sans">
+        <h2 className="relative text-greenCustom text-center md:text-left text-3xl md:text-4xl font-bold z-10 font-sans">
           Support for Personal Growth
         </h2>
-        <p className="mt-4 text-xs md:text-lg">
+        <p className="mt-4 text-greenCustom text-xs md:text-lg">
           Offering compassionate guidance to help you overcome challenges, and
           achieve personal and spiritual well-being.
         </p>

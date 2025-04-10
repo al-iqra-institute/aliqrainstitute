@@ -20,6 +20,15 @@ const HeroSection = () => {
 
       {/* <div className="absolute inset-0 bg-gradient-to-r from-gray-300 to-transparent z-[1]"></div> */}
 
+      <h3 className="absolute md:hidden w-80 text-xs left-9 top-40 text-center">
+        "Iqra – The First Word Revealed to the Final Messenger ﷺ" (اقرأ) — Read,
+        Learn, Rise
+      </h3>
+
+      <h3 className="absolute md:hidden w-80 text-xs left-10 top-48 text-center">
+        پڑھو – وہ پہلا حکم جو دلِ مصطفی "ﷺ 💚پر نازل ہوا۔
+      </h3>
+
       {/* Content */}
       <div className="relative z-10 pr-6 pl-6 md:px-16 pt-10 lg:px-24 max-w-4xl">
         <h1 className=" text-2xl md:text-5xl md:font-semibold font-bold leading-tight">
