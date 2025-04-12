@@ -14,7 +14,7 @@ const Footer = () => {
         {/* About Section */}
         <div>
           <Image
-            src="/logoinwhite.jpg"
+            src="/logobgrm.png"
             alt="Al Midrar Logo"
             width={160}
             height={60}

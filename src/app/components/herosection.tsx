@@ -16,12 +16,12 @@ const HeroSection = () => {
       </div>
 
       {/* Mobile View Text */}
-      <h3 className="absolute sm:hidden custom-sm-range font-semibold w-80 text-xs left-9 top-72 text-center">
-        &quot;Iqra – The First Word Revealed to the Final Messenger ﷺ&quot;
-        (اقرأ) — Read, Learn, Rise
+      <h3 className="absolute sm:hidden custom-sm-range font-bold w-80 text-xs left-9 top-[275px] text-center">
+        &quot;Iqra – The First Word Revealed to the Final Messenger ﷺ&quot; اقرأ
+        — Read, Learn, Rise
       </h3>
 
-      <h3 className="absolute custom-sm-range sm:hidden font-bold w-80 text-xs left-10 top-80 text-center">
+      <h3 className="absolute custom-sm-range sm:hidden font-bold w-80 text-xs left-10 top-[307px] text-center">
         پڑھو – وہ پہلا حکم جو دلِ مصطفی ﷺ 💚 پر نازل ہوا۔
       </h3>
 
